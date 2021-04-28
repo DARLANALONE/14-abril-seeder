@@ -25,13 +25,13 @@
                 </tr>
                 </thead>
                 <tbody>
-                 @foreach($companies as $companie)
+                 @foreach($companies as $companies)
                 </tr>
-                <td> {{ $companie->id }} </td>
-                <td> {{ $companie->name }} </td>
-                <td> {{ $companie->nit }} </td>
-                <td> {{ $companie->address }} </td>
-                <td> {{ $companie->logo }} </td>
+                <td> {{ $companies->id }} </td>
+                <td> {{ $companies->name }} </td>
+                <td> {{ $companies->nit }} </td>
+                <td> {{ $companies->address }} </td>
+                <td> {{ $companies->logo }} </td>
                  <tr>
                  @endforeach
 
