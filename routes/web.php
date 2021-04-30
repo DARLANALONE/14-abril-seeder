@@ -14,3 +14,6 @@ use App\Http\Controllers\CompaniesController;
 */
 
 Route::get('companies',[CompaniesController::class,'index']);
+Route::get('companies/create',[CompaniesController::class,'create']);
+Route::post('companies',[CompaniesController::class,'store']);
+Route::get('companies/{id}',[CompaniesController::class,'show']);

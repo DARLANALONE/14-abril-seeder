@@ -15,6 +15,8 @@
     <div class="row">
         <div class="col-md-12">
             <br>
+            <a href="{{ url('companies/create') }}" class="btn btn-primary">Crear nuevo usuario</a>
+            <br><br>
             <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -23,6 +25,7 @@
                     <th>NIT EMPRESA</th>
                     <th>DIRECCION</th>
                     <th>LOGO</th>
+                    <th>OPCIONES</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -33,6 +36,11 @@
                 <td> {{ $company->nit }} </td>
                 <td> {{ $company->address }} </td>
                 <td> {{ $company->logo }} </td>
+                <td>
+                    <a href="{{url('companies',$company->id)}}" class="btn btn-info btn-sm">Detalle</a>
+                    <a href="" class="btn btn-warning btn- sm">Editar</a>
+                    <a href="" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
                 <tr>
                 @endforeach
 
