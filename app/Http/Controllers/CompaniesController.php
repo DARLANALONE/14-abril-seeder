@@ -9,7 +9,7 @@ class CompaniesController extends Controller
     public function index(){
 
         // select * from companies
-        $companies = Companies::all();
+        $companies = Companies::paginate();
         return view('companies.index',compact('companies'));
     }
 

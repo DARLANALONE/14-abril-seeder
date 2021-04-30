@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <title>Document</title>
 </head>
@@ -25,15 +26,15 @@
                 </tr>
                 </thead>
                 <tbody>
-                 @foreach($companies as $companies)
+                @foreach($companies as $company)
                 </tr>
-                <td> {{ $companies->id }} </td>
-                <td> {{ $companies->name }} </td>
-                <td> {{ $companies->nit }} </td>
-                <td> {{ $companies->address }} </td>
-                <td> {{ $companies->logo }} </td>
-                 <tr>
-                 @endforeach
+                <td> {{ $company->id }} </td>
+                <td> {{ $company->name }} </td>
+                <td> {{ $company->nit }} </td>
+                <td> {{ $company->address }} </td>
+                <td> {{ $company->logo }} </td>
+                <tr>
+                @endforeach
 
                 </tbody>
             </table>
